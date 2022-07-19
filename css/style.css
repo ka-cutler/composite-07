@@ -1,4 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500;600;800&family=Raleway:wght@100;300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --defaultOrange: #ffa400
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MOBILE VERSION */
+
+@media (min-width: 300px) {
+
+    nav > ul {
+        display: none;
+    }
+
+    nav h2 {
+        text-transform: capitalize;
+        color: gray;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+
+    nav {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    details {
+        position: relative;
+        width: 50%;
+        text-align: right;
+        display: flex;
+        justify-content: right;
+    }
+
+    details > ul {
+        background-color: var(--defaultOrange);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    details li {
+        display: flex;
+    }
+
+    details a {
+        padding: 3%;
+        width: 100%;
+        text-decoration: none;
+        font-size: 20px;
+        color: whitesmoke;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    summary {
+        font-size: 30px;
+        color: var(--defaultOrange);
+    }
+
+    header {
+        height: 60vh;
+        background-image: url(/img/castle.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    header > section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+        color: whitesmoke;
+    }
+
+    header h1, header h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    header a {
+        background-color: var(--defaultOrange);
+        padding: 3%;
+        width: 30%;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: whitesmoke;
+        font-weight: 600;
+    }
 }
