@@ -277,6 +277,40 @@ body {
         width: 90%;
     }
 
+    .team > article:last-child {
+        row-gap: 10vh;
+    }
+
+    .team h4 {
+        font-size: 24px;
+        padding: 1%;
+        text-transform: uppercase;
+        color: var(--defaultOrange);
+        background-color: white;
+    }
+
+    .team small {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .team img {
+        width: 100%;
+    }
+
+    .team figure {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .team figcaption {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
 
     .portfolio {
         row-gap: 10vh;
@@ -395,6 +429,7 @@ body {
         border: 1px solid whitesmoke;
         background-color: #303030;
     }
+
 
     
 }
