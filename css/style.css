@@ -144,6 +144,56 @@ body {
         flex-direction: column;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2vh;
+        border-top: 1px solid dimgray;
+        background-color: #202020;
+        padding: 5%;
+        color: whitesmoke;
+    }
+
+    footer > article {
+        width: 50%;
+        display: flex;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer li {
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+        width: 5vh;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-brands {
+        display: flex;
+    }
+
+    footer a {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
     .section-title {
         display: flex;
         flex-direction: column;
